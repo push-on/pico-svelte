@@ -1,8 +1,9 @@
+
 <body>
   <!-- Header -->
   <header class="container">
     <hgroup>
-      <h1>Basic template</h1>
+      <h1 class="pico-color-pink-500">Basic template</h1>
       <h2>
         A basic custom template for Pico using only CSS custom properties
         (variables).
@@ -13,8 +14,7 @@
         <li>
           <details role="list">
             <!-- svelte-ignore a11y-no-redundant-roles -->
-            <summary aria-haspopup="listbox" role="button" class="secondary"
-              >Theme</summary>
+            <summary aria-haspopup="listbox" role="button" class="secondary">Theme</summary>
             <ul role="listbox">
               <li><a href="/" data-theme-switcher="auto">Auto</a></li>
               <li><a href="/" data-theme-switcher="light">Light</a></li>
@@ -411,15 +411,45 @@
     <!-- ./ Tables -->
 
     <!-- Modal -->
-    <section id="modal">
-      <h2>Modal</h2>
-      <button
-        class="contrast"
+<!-- Button to trigger the modal -->
+<button class="contrast"
+  data-target="modal-example"
+  onClick="toggleModal(event)">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<dialog id="modal-example">
+  <article>
+    <a href="#close"
+      aria-label="Close"
+      class="close"
+      data-target="modal-example"
+      onClick="toggleModal(event)">
+    </a>
+    <h3>Confirm your action!</h3>
+    <p>
+      Cras sit amet maximus risus. 
+      Pellentesque sodales odio sit amet augue finibus pellentesque. 
+      Nullam finibus risus non semper euismod.
+    </p>
+    <footer>
+      <a href="#cancel"
+        role="button"
+        class="secondary"
         data-target="modal-example"
-        onclick="toggleModal(event)">
-        Launch demo modal
-      </button>
-    </section>
+        onClick="toggleModal(event)">
+        Cancel
+      </a>
+      <a href="#confirm"
+        role="button"
+        data-target="modal-example"
+        onClick="toggleModal(event)">
+        Confirm
+      </a>
+    </footer>
+  </article>
+</dialog>
     <!-- ./ Modal -->
 
     <!-- Accordions -->
