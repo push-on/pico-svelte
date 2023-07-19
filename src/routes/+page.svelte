@@ -13,7 +13,8 @@
         <li>
           <details role="list">
             <!-- svelte-ignore a11y-no-redundant-roles -->
-            <summary aria-haspopup="listbox" role="button" class="secondary">Theme</summary>
+            <summary aria-haspopup="listbox" role="button" class="secondary"
+              >Theme</summary>
             <ul role="listbox">
               <li><a href="/" data-theme-switcher="auto">Auto</a></li>
               <li><a href="/" data-theme-switcher="light">Light</a></li>
@@ -172,7 +173,7 @@
       <!-- Medias-->
       <figure>
         <img
-          src="img/aleksandar-jason-a562ZEFKW8I-unsplash-2000x1000.jpg"
+          src="https://images.unsplash.com/photo-1473984951266-787b955c9e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
           alt="Minimal landscape" />
         <figcaption>
           Image from
@@ -523,5 +524,3 @@
     </article>
   </dialog>
 </body>
-
-
