@@ -1,3 +1,7 @@
+<script>
+  import img from "../assets/img.webp"
+</script>
+
 <body>
   <!-- Header -->
   <header class="container">
@@ -168,7 +172,7 @@
       <!-- Medias-->
       <figure>
         <img
-          src="https://images.unsplash.com/photo-1473984951266-787b955c9e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          src={img}
           alt="Minimal landscape" />
         <figcaption>
           Image from
