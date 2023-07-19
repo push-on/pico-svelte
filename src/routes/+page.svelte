@@ -1,4 +1,3 @@
-
 <body>
   <!-- Header -->
   <header class="container">
@@ -12,30 +11,26 @@
     <nav>
       <ul>
         <li>
-          <details role="list">
-            <!-- svelte-ignore a11y-no-redundant-roles -->
-            <summary aria-haspopup="listbox" role="button" class="secondary">Theme</summary>
-            <ul role="listbox">
-              <li><a href="/" data-theme-switcher="auto">Auto</a></li>
-              <li><a href="/" data-theme-switcher="light">Light</a></li>
-              <li><a href="/" data-theme-switcher="dark">Dark</a></li>
+          <!-- Dropdown -->
+          <details class="dropdown">
+            <summary>Dropdown</summary>
+            <ul>
+              <li><a href="/">Solid</a></li>
+              <li><a href="/">Liquid</a></li>
+              <li><a href="/">Gas</a></li>
+              <li><a href="/">Plasma</a></li>
             </ul>
           </details>
         </li>
         <li>
-          <details role="list">
-            <summary aria-haspopup="listbox">Examples (v1)</summary>
-            <ul role="listbox">
-              <li><a href="../v1-preview/">Preview</a></li>
-              <li><a href="../v1-preview-rtl/">Right-to-left</a></li>
-              <li><a href="../v1-classless/">Classless</a></li>
-              <li><a href="../v1-basic-template/">Basic template</a></li>
-              <li><a href="../v1-company/">Company</a></li>
-              <li><a href="../v1-google-amp/">Google Amp</a></li>
-              <li><a href="../v1-sign-in/">Sign in</a></li>
-              <li><a href="../v1-bootstrap-grid/">Bootstrap grid</a></li>
-            </ul>
-          </details>
+          <!-- Select -->
+          <select required>
+            <option selected disabled value="">Select</option>
+            <option>Solid</option>
+            <option>Liquid</option>
+            <option>Gas</option>
+            <option>Plasma</option>false
+          </select>
         </li>
       </ul>
     </nav>
@@ -411,45 +406,47 @@
     <!-- ./ Tables -->
 
     <!-- Modal -->
-<!-- Button to trigger the modal -->
-<button class="contrast"
-  data-target="modal-example"
-  onClick="toggleModal(event)">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<dialog id="modal-example">
-  <article>
-    <a href="#close"
-      aria-label="Close"
-      class="close"
+    <!-- Button to trigger the modal -->
+    <button
+      class="contrast"
       data-target="modal-example"
       onClick="toggleModal(event)">
-    </a>
-    <h3>Confirm your action!</h3>
-    <p>
-      Cras sit amet maximus risus. 
-      Pellentesque sodales odio sit amet augue finibus pellentesque. 
-      Nullam finibus risus non semper euismod.
-    </p>
-    <footer>
-      <a href="#cancel"
-        role="button"
-        class="secondary"
-        data-target="modal-example"
-        onClick="toggleModal(event)">
-        Cancel
-      </a>
-      <a href="#confirm"
-        role="button"
-        data-target="modal-example"
-        onClick="toggleModal(event)">
-        Confirm
-      </a>
-    </footer>
-  </article>
-</dialog>
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <dialog id="modal-example">
+      <article>
+        <a
+          href="#close"
+          aria-label="Close"
+          class="close"
+          data-target="modal-example"
+          onClick="toggleModal(event)" />
+        <h3>Confirm your action!</h3>
+        <p>
+          Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue
+          finibus pellentesque. Nullam finibus risus non semper euismod.
+        </p>
+        <footer>
+          <a
+            href="#cancel"
+            role="button"
+            class="secondary"
+            data-target="modal-example"
+            onClick="toggleModal(event)">
+            Cancel
+          </a>
+          <a
+            href="#confirm"
+            role="button"
+            data-target="modal-example"
+            onClick="toggleModal(event)">
+            Confirm
+          </a>
+        </footer>
+      </article>
+    </dialog>
     <!-- ./ Modal -->
 
     <!-- Accordions -->
